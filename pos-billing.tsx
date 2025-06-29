@@ -49,7 +49,8 @@ export default function POSBilling() {
   const [lastSaleId, setLastSaleId] = useState<string | null>(null)
   const printRef = useRef<HTMLDivElement>(null)
 
-  const API_BASE_URL = "http://127.0.0.1:8888/api"
+  const API_BASE_URL = "https://sellerpos.pythonanywhere.com/api"
+  // const API_BASE_URL = "http://127.0.0.1:8888/api"
 
   const addItem = () => {
     if (!productName || !productPrice || !productQuantity) return
